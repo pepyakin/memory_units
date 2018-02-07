@@ -6,13 +6,20 @@ Crate for safe conversion between units of memory (extracted from [wee_alloc](ht
 
 # License
 
-`memory_units` is primarily distributed under the terms of both the MIT
-license and the Apache License (Version 2.0), at your choice.
+Licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
-See LICENSE-APACHE, and LICENSE-MIT for details.
+[TL;DR?](https://choosealicense.com/licenses/mpl-2.0/)
+
+> Permissions of this weak copyleft license are conditioned on making available
+> source code of licensed files and modifications of those files under the same
+> license (or in certain cases, one of the GNU licenses). Copyright and license
+> notices must be preserved. Contributors provide an express grant of patent
+> rights. However, a larger work using the licensed work may be distributed
+> under different terms and without source code for files added in the larger
+> work.
 
 ## Contribution
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in `memory_units` by you, as defined in the Apache-2.0 license, shall be
-dual licensed as above, without any additional terms or conditions.
+See
+[CONTRIBUTING.md](https://github.com/pepyakin/memory_units/blob/master/CONTRIBUTING.md)
+for hacking!
