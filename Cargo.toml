@@ -1,0 +1,6 @@
+[package]
+name = "memory_units"
+version = "0.1.0"
+authors = ["Nick Fitzgerald <fitzgen@gmail.com>", "Sergey Pepyakin <s.pepyakin@gmail.com>"]
+
+[dependencies]
