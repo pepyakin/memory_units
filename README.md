@@ -1,4 +1,6 @@
-# memory_units
+# `memory_units`
+
+[![Build Status](https://travis-ci.org/pepyakin/memory_units.svg?branch=master)](https://travis-ci.org/pepyakin/memory_units)
 
 Crate for safe conversion between units of memory (extracted from [wee_alloc](https://github.com/fitzgen/wee_alloc)).
 
