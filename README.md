@@ -1,6 +1,8 @@
 # `memory_units`
 
 [![Build Status](https://travis-ci.org/pepyakin/memory_units.svg?branch=master)](https://travis-ci.org/pepyakin/memory_units)
+[![](https://docs.rs/memory_units/badge.svg)](https://docs.rs/memory_units/)
+[![](https://img.shields.io/crates/v/memory_units.svg)](https://crates.io/crates/memory_units)
 
 Crate for safe conversion between units of memory (extracted from [wee_alloc](https://github.com/fitzgen/wee_alloc)).
 
