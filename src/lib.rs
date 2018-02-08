@@ -177,7 +177,7 @@ pub mod wasm32 {
     }
 
     define_unit! {
-        /// Memory size specified in WebAssembly [memory pages].
+        /// Memory size specified in WebAssembly [memory pages][memory page].
         ///
         /// [memory page]: https://en.wikipedia.org/wiki/Page_(computer_memory)
         newtype Pages is bytes = 65536;
@@ -205,7 +205,7 @@ pub mod target {
     }
 
     define_unit! {
-        /// Memory size specified in [memory page].
+        /// Memory size specified in [memory pages][memory page].
         ///
         /// [memory page]: https://en.wikipedia.org/wiki/Page_(computer_memory)
         newtype Pages is bytes = 4096;
