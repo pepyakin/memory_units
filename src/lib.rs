@@ -9,10 +9,7 @@ use core::ops;
 macro_rules! impl_byte_size {
     ( $name:ident , $byte_size:expr ) => {
         impl ByteSize for $name {
-            #[inline]
-            fn byte_size() -> Bytes {
-                Bytes($byte_size)
-            }
+            const BYTE_SIZE: Bytes = Bytes($byte_size);
         }
     }
 }
@@ -22,7 +19,7 @@ macro_rules! impl_from_bytes {
         impl From<$name> for Bytes {
             #[inline]
             fn from(x: $name) -> Bytes {
-                Bytes(x.0 * $name::byte_size().0)
+                Bytes(x.0 * $name::BYTE_SIZE.0)
             }
         }
     }
@@ -33,7 +30,7 @@ macro_rules! impl_ops {
         impl<T: Into<Bytes>> RoundUpTo<$name> for T {
             fn round_up_to(self) -> $name {
                 let bytes: Bytes = self.into();
-                $name(round_up_to(bytes.0, $name::byte_size().0))
+                $name(round_up_to(bytes.0, $name::BYTE_SIZE.0))
             }
         }
 
@@ -152,11 +149,11 @@ pub(crate) fn round_up_to(n: usize, divisor: usize) -> usize {
 ///
 /// ```rust
 /// # use memory_units::*;
-/// println!("The size of one word in bytes is {}.", Words::byte_size().0);
+/// println!("The size of one word in bytes is {}.", Words::BYTE_SIZE.0);
 /// ```
 pub trait ByteSize {
     /// The size, in bytes, of a single unit of `Self`.
-    fn byte_size() -> Bytes;
+    const BYTE_SIZE: Bytes;
 }
 
 
